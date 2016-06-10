@@ -1,0 +1,61 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Hack', 'Noto Sans S Chinese', 'Lantinghei SC', 'Arial', sans-serif, 'Microsoft Yahei';
+}
+
+.h5_page{
+    background-image: url(../imgs/page_bg.png);
+}
+.h5_page_face{
+    background-image: url(../imgs/face_bg.png);
+}
+
+.h5_component_name_time{
+    text-align: center;
+    color: #fff;
+    font-size: 22px;
+}
+/*.h5_component_name_slogan{
+    -webkit-animation:rock 2s infinite 2s;
+}
+@-webkit-keyframes rock{
+    0%{ transform:rotate(0deg)}
+    5%{ transform:rotate(3deg)}
+    10%{ transform:rotate(-4deg)}
+    15%{ transform:rotate(3deg)}
+    20%{ transform:rotate(-2deg)}
+    25%{ transform:rotate(1deg)}
+    30%{ transform:rotate(-1deg)}
+    70%{ transform:rotate(0deg)}
+    100%{ transform:rotate(0deg)}
+}
+*/
+
+.h5_component_name_caption{
+    position: absolute;
+    top: 20px;
+    background-image: url(../imgs/page_caption_bg.png);
+    width: 323px;
+    height: 77px;
+    text-align: center;
+    line-height: 77px;
+    font-size: 20px;
+    color: #fff;
+}
+
+.h5_component_name_msg{
+    text-align: center;
+    width: 100%;
+    color: #fff;
+    font-size: 15px;
+}
+
+.h5_component_name_back{
+    top: 30px;
+    -webkit-animation:back 2s infinite 2s;
+}
+
+@-webkit-keyframes back{
+    50%{ top: 20px; }
+}

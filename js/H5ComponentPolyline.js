@@ -17,15 +17,18 @@ var H5ComponentPolyline = function(name, cfg){
 
 	// 水平网格线 100份－》10份
 	var step = 10;
-	ctx.beginPath();
-	ctx.lineWidth = 1;
-	ctx.strokeStyle = '#ccc';
 
-	window.ctx = ctx;
-	for(var i=0; i<step+1; i++){
-		var y = (h/step) * i;
-		ctx.moveTo(0, y);
-		ctx.lineTo(w, y);
+	if(cfg.showBg){
+		ctx.beginPath();
+		ctx.lineWidth = 1;
+		ctx.strokeStyle = '';
+
+		window.ctx = ctx;
+		for(var i=0; i<step+1; i++){
+			var y = (h/step) * i;
+			ctx.moveTo(0, y);
+			ctx.lineTo(w, y);
+		}
 	}
 
 	// 垂直网格线(根据项目的个数去分)
@@ -66,7 +69,8 @@ var H5ComponentPolyline = function(name, cfg){
 		// 绘制折线数据
 		ctx.beginPath();
 		ctx.lineWidth = 3;
-		ctx.strokeStyle = '#ff8878';
+		// ctx.strokeStyle = '#ff8878';
+		ctx.strokeStyle = '#e90004';
 
 		var x = 0;
 		var y = 0;
@@ -99,7 +103,7 @@ var H5ComponentPolyline = function(name, cfg){
 
 		ctx.stroke();
 		ctx.lineWidth = 1;
-		ctx.fillStyle = 'rgba(255, 135, 120, 0.2)';
+		ctx.fillStyle = 'rgba(233, 0, 4, 0.5)';
 
 		// 绘制阴影
 		ctx.lineTo(x, h);
@@ -111,7 +115,7 @@ var H5ComponentPolyline = function(name, cfg){
 			var item = cfg.data[i];
 			x = row_w * i + row_w;
 			y = h - (item[1]*h*per);
-			ctx.fillStyle = item[2] ? item[2] : '#000';
+			ctx.fillStyle = item[2] ? item[2] : '#e90004';
 			ctx.fillText(((item[1]*100) >> 0)+'%', x-10, y-10);
 		}	
 

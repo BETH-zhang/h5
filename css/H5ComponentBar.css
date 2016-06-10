@@ -12,7 +12,7 @@
 .h5_component_bar .name{
     width: 60px;
     float: left;
-    color: #000;
+    color: #fff;
     text-align: center;
 }
 
@@ -23,7 +23,7 @@
     position: relative;
 }
 .h5_component_bar .rate .bg{
-    background-color: #99c0ff;
+    background-color: #990000;
     width: 0%;
     height: 100%;
     position: absolute;

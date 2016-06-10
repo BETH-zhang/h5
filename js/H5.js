@@ -46,6 +46,9 @@ var H5 = function(){
 			case 'base':
 				component = new H5ComponentBase(name, cfg);
 				break;
+			case 'logo':
+				component = new H5ComponentLogo(name, cfg);
+				break;
 			case 'polyline':
 				component = new H5ComponentPolyline(name, cfg);
 				break;
@@ -55,9 +58,6 @@ var H5 = function(){
 			case 'bar':
 				component = new H5ComponentBar(name, cfg);
 				break;
-			case 'bar_v':
-				component = new H5ComponentBar_v(name, cfg);
-				break; 
 			case 'radar':
 				component = new H5ComponentRadar(name, cfg);
 				break; 
@@ -73,6 +73,7 @@ var H5 = function(){
 		page.append(component);
 		return this;
 	}
+
 	/*H5对象初始化呈现*/
 	this.loader = function( firstPage ){
 		this.el.fullpage({
@@ -86,10 +87,12 @@ var H5 = function(){
             }
 		});
 		this.page[0].find('.h5_component').trigger('onLoad');
-		console.log('---');
+		this.el.show();
+
 		if(firstPage){
 			$.fn.fullpage.moveTo( firstPage );
 		}
+
 	}
 
 	this.loader = typeof H5_loading === 'function' ? H5_loading : this.loader;

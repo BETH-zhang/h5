@@ -11,6 +11,9 @@ var H5ComponentBar =function ( name, cfg ) {
     var per = $('<div class="per">');
 
     var width = item[1]*100 + '%';
+    if(cfg.doubleWidth){
+      width = item[1]*1.5*100 + '%';
+    }
 
     var  bgStyle = '';
     if( item[2] ){
@@ -23,7 +26,7 @@ var H5ComponentBar =function ( name, cfg ) {
 
     name.text( item[0]);
 
-    per.text(width);
+    per.text(item[1]*100 + '%');
 
     line.append( name ).append( rate ).append( per );
 
