@@ -49,6 +49,9 @@ var H5 = function(){
 			case 'logo':
 				component = new H5ComponentLogo(name, cfg);
 				break;
+			case 'phone':
+				component = new H5ComponentPhone(name, cfg);
+				break;
 			case 'polyline':
 				component = new H5ComponentPolyline(name, cfg);
 				break;

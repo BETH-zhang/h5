@@ -9,10 +9,12 @@ var H5ComponentPoint =function ( name, cfg ) {
    $.each( cfg.data,function( idx ,item ){
 
         var point = $('<div class="point point_'+idx+'" >');
+        point.addClass('point_focus');
 
         var name = $('<div class="name">'+item[0]+'</div>');
         var rate = $('<div class="per">'+ (item[1]*100)+'%</div>');
 
+        name.css('font-size', 22*item[1]);
         name.append(rate);
         point.append(name);
 
@@ -61,7 +63,7 @@ var H5ComponentPoint =function ( name, cfg ) {
         $(this).addClass('point_focus');
 
         return false;
-   }).eq(0).addClass('point_focus')
+   }).eq(0).addClass('point_focus');
 
    return component;
 }

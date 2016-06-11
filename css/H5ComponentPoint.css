@@ -19,10 +19,10 @@
     position: absolute;
     top: 50%;
     margin-top: -15px;
-    font-size: 22px;
+    font-size: 18px;
 }
 .h5_component_point .per{
-    font-size: .5em;
+    font-size: 12px;
 }
 
 .h5_component_point_load .point{

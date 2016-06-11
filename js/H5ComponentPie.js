@@ -19,8 +19,8 @@ var H5ComponentPie =function ( name, cfg ) {
 
   //  加入一个底图层
   ctx.beginPath();
-  ctx.fillStyle='#eee';
-  ctx.strokeStyle='#eee';
+  // ctx.fillStyle='#eee';
+  // ctx.strokeStyle='#eee';
   ctx.lineWidth = 1;
   ctx.arc(r,r,r,0,2*Math.PI);
   ctx.fill();
@@ -82,7 +82,7 @@ var H5ComponentPie =function ( name, cfg ) {
     if(y > h/2){
       text.css('top',y/2);
     }else{
-      text.css('bottom',(h-y)/2);
+      text.css('bottom',(h-y)/2+20);
     }
     if( cfg.data[i][2] ){
       text.css('color',cfg.data[i][2]); 
@@ -101,8 +101,8 @@ var H5ComponentPie =function ( name, cfg ) {
   component.append(cns);
 
 
-  ctx.fillStyle='#eee';
-  ctx.strokeStyle='#eee';
+  ctx.fillStyle='#000';
+  ctx.strokeStyle='#000';
   ctx.lineWidth = 1;
 
 

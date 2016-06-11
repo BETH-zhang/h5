@@ -11,6 +11,7 @@ var H5ComponentBase =function ( name, cfg ) {
     cfg.text   &&  component.text(cfg.text);
     cfg.width  &&  component.width(cfg.width/2);
     cfg.height &&  component.height(cfg.height/2);
+    cfg.html   &&  component.html(cfg.html);
 
     cfg.css && component.css( cfg.css );
     cfg.bg  && component.css('backgroundImage','url('+cfg.bg+')');

@@ -1,7 +1,6 @@
 /*loading动画*/
 
 var H5_loading = function(images, firstPage){
-	console.log('firstPage==', firstPage);
 
 	if(this._images === undefined){//第一个进入
 		this._images = (images || []).length;
@@ -44,7 +43,7 @@ var H5_loading = function(images, firstPage){
         }
 	});
 	this.page[0].find('.h5_component').trigger('onLoad');
-	this.el.show();
+	// this.el.show();
 
 	if(firstPage){
 		$.fn.fullpage.moveTo( firstPage );

@@ -59,3 +59,7 @@ body{
 @-webkit-keyframes back{
     50%{ top: 20px; }
 }
+
+.h5_component_name_team{
+    border: 1px solid #ff0000;
+}

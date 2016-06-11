@@ -1,0 +1,28 @@
+.h5_component_phone{
+	position: relative;
+	overflow: hidden;
+}
+
+.h5_component_phone .img{
+	overflow: hidden;
+	float: left;
+	width: 42px;
+	height: 30px;
+	padding-bottom: 10px;
+	text-align: center;
+}
+
+.h5_component_phone img{
+	width: 29px;
+	height: 29px;
+	border: 1px solid #ff0000;
+}
+
+.h5_component_phone_load .img{
+    -webkit-opacity:1;
+    /*-webkit-transform:scale(1);*/
+}
+.h5_component_phone_leave .img{
+    -webkit-opacity:0;
+    /*-webkit-transform:scale(.1)*/
+}
