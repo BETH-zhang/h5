@@ -43,7 +43,7 @@ var H5_loading = function(images, firstPage){
         }
 	});
 	this.page[0].find('.h5_component').trigger('onLoad');
-	// this.el.show();
+	this.el.show();
 
 	if(firstPage){
 		$.fn.fullpage.moveTo( firstPage );
