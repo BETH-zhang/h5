@@ -26,7 +26,6 @@ $(function(){
     
     // var h5 = new H5();
     var h5 = require('./H5.js');
-    console.log(h5);
 
     h5.whenAddPage = function(){
         this.addComponent('slide_up', {

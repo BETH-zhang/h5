@@ -19,9 +19,17 @@
   "homepage": "https://github.com/BETH-zhang/h5#readme",
   "dependencies": {
     "ejs": "^2.4.2",
-    "express": "^4.13.4"
+    "express": "^4.13.4",
+    "fullpage.js": "^2.8.1",
+    "jquery": "^3.0.0",
+    "jquery-ui": "^1.10.5"
   },
   "devDependencies": {
-    "extract-text-webpack-plugin": "^1.0.1"
+    "css-loader": "^0.23.1",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "file-loader": "^0.8.5",
+    "style-loader": "^0.13.1",
+    "url-loader": "^0.5.7",
+    "webpack": "^1.13.1"
   }
 }

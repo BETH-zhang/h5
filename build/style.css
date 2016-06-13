@@ -1,4 +1,68 @@
-/* H5对象的全局样式 */
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Hack', 'Noto Sans S Chinese', 'Lantinghei SC', 'Arial', sans-serif, 'Microsoft Yahei';
+}
+
+.h5_page{
+    background-image: url(03c864f97609940695b36ce594db52c1.png);
+}
+.h5_page_face{
+    background-image: url(a9f01629f09471a43eb7f1f089cc4b86.png);
+}
+
+.h5_component_name_time{
+    text-align: center;
+    color: #fff;
+    font-size: 22px;
+}
+/*.h5_component_name_slogan{
+    -webkit-animation:rock 2s infinite 2s;
+}
+@-webkit-keyframes rock{
+    0%{ transform:rotate(0deg)}
+    5%{ transform:rotate(3deg)}
+    10%{ transform:rotate(-4deg)}
+    15%{ transform:rotate(3deg)}
+    20%{ transform:rotate(-2deg)}
+    25%{ transform:rotate(1deg)}
+    30%{ transform:rotate(-1deg)}
+    70%{ transform:rotate(0deg)}
+    100%{ transform:rotate(0deg)}
+}
+*/
+
+.h5_component_name_caption{
+    position: absolute;
+    top: 20px;
+    background-image: url(18e539afb7672f6052e32a9d44357b33.png);
+    width: 323px;
+    height: 77px;
+    text-align: center;
+    line-height: 77px;
+    font-size: 20px;
+    color: #fff;
+}
+
+.h5_component_name_msg{
+    text-align: center;
+    width: 100%;
+    color: #fff;
+    font-size: 15px;
+}
+
+.h5_component_name_back{
+    top: 30px;
+    -webkit-animation:back 2s infinite 2s;
+}
+
+@-webkit-keyframes back{
+    50%{ top: 20px; }
+}
+
+.h5_component_name_team{
+    border: 1px solid #ff0000;
+}/* H5对象的全局样式 */
 .h5{
 	height: 100%;
 }
