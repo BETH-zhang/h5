@@ -1,7 +1,8 @@
 /* 散点图表组件对象 */
 
+var H5ComponentBase = require('./H5ComponentBase');
 var H5ComponentPoint =function ( name, cfg ) {
-   var component =  new H5ComponentBase( name ,cfg );
+   var component =  H5ComponentBase( name ,cfg );
    
    var base = cfg.data[0][1];   //  以第一个数据的 比例为大小的 100%
 
@@ -67,3 +68,5 @@ var H5ComponentPoint =function ( name, cfg ) {
 
    return component;
 }
+
+module.exports = H5ComponentPoint;

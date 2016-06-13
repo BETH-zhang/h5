@@ -1,6 +1,7 @@
 
+var H5ComponentBase = require('./H5ComponentBase');
 var H5ComponentPhone = function(name, cfg){
-	var component = new H5ComponentBase(name, cfg);
+	var component = H5ComponentBase(name, cfg);
 
 	$.each(cfg.data, function(index, item){
 
@@ -14,3 +15,5 @@ var H5ComponentPhone = function(name, cfg){
 
 	return component;
 }
+
+module.exports = H5ComponentPhone;

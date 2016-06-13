@@ -50,3 +50,5 @@ var getDaysFromYear = function(year, month, day){
 
     return days;
 }
+
+module.exports = getDaysFromYear;

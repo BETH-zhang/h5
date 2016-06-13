@@ -1,5 +1,16 @@
 /* 内容管理对象 */
 
+var H5ComponentBase = require('./H5ComponentBase');
+var H5ComponentLogo = require('./H5ComponentLogo');
+var H5ComponentPhone = require('./H5ComponentPhone');
+var H5ComponentPolyline = require('./H5ComponentPolyline');
+var H5ComponentPie = require('./H5ComponentPie');
+var H5ComponentBar = require('./H5ComponentBar');
+var H5ComponentRadar = require('./H5ComponentRadar');
+var H5ComponentRing = require('./H5ComponentRing');
+var H5ComponentPoint = require('./H5ComponentPoint');
+var H5_loading = require('./H5_loading');
+
 var H5 = function(){
 	this.id = ('h5_'+Math.random()).replace('.', '_');
 	this.el = $('<div class="h5" id="'+this.id+'">').hide();
@@ -44,31 +55,31 @@ var H5 = function(){
 		var page = this.page.slice(-1)[0];
 		switch( cfg.type ){
 			case 'base':
-				component = new H5ComponentBase(name, cfg);
+				component = H5ComponentBase(name, cfg);
 				break;
 			case 'logo':
-				component = new H5ComponentLogo(name, cfg);
+				component = H5ComponentLogo(name, cfg);
 				break;
 			case 'phone':
-				component = new H5ComponentPhone(name, cfg);
+				component = H5ComponentPhone(name, cfg);
 				break;
 			case 'polyline':
-				component = new H5ComponentPolyline(name, cfg);
+				component = H5ComponentPolyline(name, cfg);
 				break;
 			case 'pie':
-            	component = new H5ComponentPie(name, cfg);
+            	component = H5ComponentPie(name, cfg);
 				break;
 			case 'bar':
-				component = new H5ComponentBar(name, cfg);
+				component = H5ComponentBar(name, cfg);
 				break;
 			case 'radar':
-				component = new H5ComponentRadar(name, cfg);
+				component = H5ComponentRadar(name, cfg);
 				break; 
 			case 'ring':
-				component = new H5ComponentRing(name, cfg);
+				component = H5ComponentRing(name, cfg);
 				break; 
 			case 'point':
-				component = new H5ComponentPoint(name, cfg);
+				component = H5ComponentPoint(name, cfg);
 				break; 
 			default:
 		};
@@ -102,4 +113,6 @@ var H5 = function(){
 
 	return this;
 }
+
+module.exports = H5();
 

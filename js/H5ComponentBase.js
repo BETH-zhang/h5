@@ -63,3 +63,6 @@ var H5ComponentBase =function ( name, cfg ) {
 
     return component;
 }
+
+
+module.exports = H5ComponentBase;

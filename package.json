@@ -20,5 +20,8 @@
   "dependencies": {
     "ejs": "^2.4.2",
     "express": "^4.13.4"
+  },
+  "devDependencies": {
+    "extract-text-webpack-plugin": "^1.0.1"
   }
 }

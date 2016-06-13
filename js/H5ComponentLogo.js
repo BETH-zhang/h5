@@ -1,7 +1,8 @@
 /* logo组件对象 */
 
+var H5ComponentBase = require('./H5ComponentBase');
 var H5ComponentLogo = function(name, cfg){
-	var component = new H5ComponentBase(name, cfg);
+	var component = H5ComponentBase(name, cfg);
 
 	var path1 = $('<div class="logo path1">');
 	var path2 = $('<div class="logo path2">');
@@ -13,3 +14,5 @@ var H5ComponentLogo = function(name, cfg){
 
 	return component;
 }
+
+module.exports = H5ComponentLogo;

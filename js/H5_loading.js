@@ -49,3 +49,5 @@ var H5_loading = function(images, firstPage){
 		$.fn.fullpage.moveTo( firstPage );
 	}
 }
+
+module.exports = H5_loading;

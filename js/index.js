@@ -6,23 +6,26 @@ var res = [
     'Logo','Phone'
     ];
 for(s in res){
-    html.push('<script type="text/javascript" src="js/H5Component'+res[s]+'.js"><\/script>');
+    // html.push('<script type="text/javascript" src="js/H5Component'+res[s]+'.js"><\/script>');
     html.push('<link rel="stylesheet" type="text/css" href="css/H5Component'+res[s]+'.css">');
-
 }
 /*加载 工具组件*/
-var toolRes = [
-    'TimeFormat'
-    ];
-for(s in toolRes){
-    html.push('<script type="text/javascript" src="js/'+toolRes[s]+'.js"><\/script>');
-}
+// var toolRes = [
+//     'TimeFormat'
+//     ];
+// for(s in toolRes){
+//     html.push('<script type="text/javascript" src="js/'+toolRes[s]+'.js"><\/script>');
+// }
 document.write( html.join('') );
+
+var getDaysFromYear = require('./TimeFormat.js');
 
 /*主要逻辑*/
 $(function(){
     
-    var h5 = new H5();
+    // var h5 = new H5();
+    var h5 = require('./H5.js');
+    console.log(h5);
 
     h5.whenAddPage = function(){
         this.addComponent('slide_up', {

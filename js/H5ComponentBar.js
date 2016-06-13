@@ -1,7 +1,8 @@
 /* 柱图组件对象 */
 
+var H5ComponentBase = require('./H5ComponentBase');
 var H5ComponentBar =function ( name, cfg ) {
-  var component =  new H5ComponentBase( name ,cfg );
+  var component = H5ComponentBase( name ,cfg );
 
   $.each(cfg.data,function(idx,item){
 
@@ -35,3 +36,5 @@ var H5ComponentBar =function ( name, cfg ) {
 
   return component;
 }
+
+module.exports = H5ComponentBar;

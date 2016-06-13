@@ -1,7 +1,8 @@
 /* 饼图组件对象 */
 
+var H5ComponentBase = require('./H5ComponentBase');
 var H5ComponentPie =function ( name, cfg ) {
-  var component =  new H5ComponentBase( name ,cfg );
+  var component = H5ComponentBase( name ,cfg );
   
   //  绘制网格线 - 背景层
   var w = cfg.width;
@@ -156,3 +157,6 @@ var H5ComponentPie =function ( name, cfg ) {
 
   return component;
 }
+
+
+module.exports = H5ComponentPie;
