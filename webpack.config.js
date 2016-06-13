@@ -10,6 +10,11 @@ var providePlugin = new webpack.ProvidePlugin({
 
 var ExtractTextPlugin = require("extract-text-webpack-plugin");
 
+var compressjs = new webpack.optimize.UglifyJsPlugin({
+  compress: {
+    warnings: false
+  }
+});
 module.exports = {
     entry: {
         index: './js/index.js',
@@ -26,12 +31,13 @@ module.exports = {
     },
     module: {
         loaders: [
-            { test: /\.css$/, loader: ExtractTextPlugin.extract("style-loader", "css-loader") },
+            { test: /\.css$/, loader: ExtractTextPlugin.extract("style-loader", "css-loader?minimize") },
             { test: /\.(jpg|png)$/, loader: "url?limit=8192" }
         ]
     },
     plugins: [
         providePlugin, 
+        compressjs,
         new webpack.optimize.CommonsChunkPlugin('vendor', 'vendor.js'),
         new ExtractTextPlugin("style.css")
     ]
