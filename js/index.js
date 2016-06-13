@@ -62,7 +62,7 @@ $(function(){
             height: 49,
             bg: config.idx + '/imgs/face_hi.png',
             css: {top: 300, opacity: 0},
-            animateIn: {top: 220, opacity: 1},
+            animateIn: {top: 180, opacity: 1},
             animateOut: {top: 280, opacity: 0},            
             delay: 300
         })
@@ -72,7 +72,7 @@ $(function(){
             height: 49,
             text: '我来智课已经有'+getDaysFromYear(2015, 6, 5)+'天',
             css: {top: 350, opacity: 0},
-            animateIn: {top: 230, opacity: 1},
+            animateIn: {top: 210, opacity: 1},
             animateOut: {top: 350, opacity: 0},            
             delay: 500
         })
@@ -82,7 +82,7 @@ $(function(){
             height: 258,
             bg: config.idx + '/imgs/face_slogan.png',
             css: {top: 430, opacity: 0},
-            animateIn: {top: 300, opacity: 1},
+            animateIn: {top: 280, opacity: 1},
             animateOut: {top: 430, opacity: 0},            
             delay: 700
         })
@@ -115,13 +115,13 @@ $(function(){
                 ['2016.06', .8],
             ],
             css: {top: 100,opacity: 0},
-            animateIn: {top: 100,opacity: 1},
+            animateIn: {top: 80,opacity: 1},
             animateOut: {top: 100,opacity: 0},
             center: true
         })
         .addComponent('msg', {
             text: '2015-2016技术部在不断大',
-            css: {opacity: 0, top: 280},
+            css: {opacity: 0, top: 250},
             animateIn: {opacity: 1},
             animateOut: {opacity: 0},
             delay: 500
@@ -156,7 +156,7 @@ $(function(){
                 ['科学家', .01]
             ],
             css: {top: 0,opacity: 0,},
-            animateIn: {top: 140,opacity: 1},
+            animateIn: {top: 100,opacity: 1},
             animateOut: {top: 0,opacity: 0},
             center: true
         })
