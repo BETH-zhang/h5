@@ -1,3 +1,4 @@
+require('../css/H5ComponentPhone.css');
 
 var H5ComponentBase = require('./H5ComponentBase');
 var H5ComponentPhone = function(name, cfg){

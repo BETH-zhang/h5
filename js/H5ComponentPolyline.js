@@ -1,4 +1,5 @@
 /* 折线图组件对象 */
+require('../css/H5ComponentPolyline.css');
 
 var H5ComponentBase = require('./H5ComponentBase');
 var H5ComponentPolyline = function(name, cfg){

@@ -1,6 +1,7 @@
 /* 柱图组件对象 */
 
 var H5ComponentBase = require('./H5ComponentBase');
+require('../css/H5ComponentBar.css');
 var H5ComponentBar =function ( name, cfg ) {
   var component = H5ComponentBase( name ,cfg );
 

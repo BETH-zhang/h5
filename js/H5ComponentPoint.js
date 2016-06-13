@@ -1,4 +1,5 @@
 /* 散点图表组件对象 */
+require('../css/H5ComponentPoint.css');
 
 var H5ComponentBase = require('./H5ComponentBase');
 var H5ComponentPoint =function ( name, cfg ) {

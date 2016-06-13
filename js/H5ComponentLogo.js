@@ -1,4 +1,5 @@
 /* logo组件对象 */
+require('../css/H5ComponentLogo.css');
 
 var H5ComponentBase = require('./H5ComponentBase');
 var H5ComponentLogo = function(name, cfg){

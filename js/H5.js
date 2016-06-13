@@ -1,5 +1,5 @@
 /* 内容管理对象 */
-
+require('../css/H5.css');
 var H5ComponentBase = require('./H5ComponentBase');
 var H5ComponentLogo = require('./H5ComponentLogo');
 var H5ComponentPhone = require('./H5ComponentPhone');

@@ -1,4 +1,5 @@
  /* 基本图文组件对象 */
+require('../css/H5ComponentBase.css');
 
 var H5ComponentBase =function ( name, cfg ) {
     var cfg = cfg || {};

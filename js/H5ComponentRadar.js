@@ -1,4 +1,5 @@
 /* 雷达图组件对象 */
+require('../css/H5ComponentRadar.css');
 
 var H5ComponentBase = require('./H5ComponentBase');
 var H5ComponentRadar = function(name, cfg){

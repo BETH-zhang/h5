@@ -1,4 +1,5 @@
 /* 饼图组件对象 */
+require('../css/H5ComponentPie.css');
 
 var H5ComponentBase = require('./H5ComponentBase');
 var H5ComponentPie =function ( name, cfg ) {

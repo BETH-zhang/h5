@@ -1,14 +1,15 @@
 /*加载 H5组件 相关资源*/
-var html = [];
-var res = [
-    'Base','Bar','Point','Polyline',
-    'Radar','Pie','Ring',
-    'Logo','Phone'
-    ];
-for(s in res){
-    // html.push('<script type="text/javascript" src="js/H5Component'+res[s]+'.js"><\/script>');
-    html.push('<link rel="stylesheet" type="text/css" href="css/H5Component'+res[s]+'.css">');
-}
+require('../css/index.css');
+// var html = [];
+// var res = [
+//     'Base','Bar','Point','Polyline',
+//     'Radar','Pie','Ring',
+//     'Logo','Phone'
+//     ];
+// for(s in res){
+//     // html.push('<script type="text/javascript" src="js/H5Component'+res[s]+'.js"><\/script>');
+//     html.push('<link rel="stylesheet" type="text/css" href="css/H5Component'+res[s]+'.css">');
+// }
 /*加载 工具组件*/
 // var toolRes = [
 //     'TimeFormat'
@@ -16,7 +17,7 @@ for(s in res){
 // for(s in toolRes){
 //     html.push('<script type="text/javascript" src="js/'+toolRes[s]+'.js"><\/script>');
 // }
-document.write( html.join('') );
+// document.write( html.join('') );
 
 var getDaysFromYear = require('./TimeFormat.js');
 

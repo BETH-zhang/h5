@@ -1,4 +1,5 @@
 /*loading动画*/
+require('../css/H5_loading.css');
 
 var H5_loading = function(images, firstPage){
 
