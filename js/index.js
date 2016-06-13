@@ -54,7 +54,7 @@ $(function(){
             width: 300,
             height: 300,
             // bg: config.idx + '/imgs/face_logo.png',
-            css: {top: 50, opacity: 1}
+            css: {top: 30, opacity: 1}
         })
         .addComponent('hi', {
             center: true,
@@ -63,7 +63,7 @@ $(function(){
             bg: config.idx + '/imgs/face_hi.png',
             css: {top: 300, opacity: 0},
             animateIn: {top: 220, opacity: 1},
-            animateOut: {top: 300, opacity: 0},            
+            animateOut: {top: 280, opacity: 0},            
             delay: 300
         })
         .addComponent('time', {
@@ -72,7 +72,7 @@ $(function(){
             height: 49,
             text: '我来智课已经有'+getDaysFromYear(2015, 6, 5)+'天',
             css: {top: 350, opacity: 0},
-            animateIn: {top: 250, opacity: 1},
+            animateIn: {top: 230, opacity: 1},
             animateOut: {top: 350, opacity: 0},            
             delay: 500
         })
@@ -82,7 +82,7 @@ $(function(){
             height: 258,
             bg: config.idx + '/imgs/face_slogan.png',
             css: {top: 430, opacity: 0},
-            animateIn: {top: 330, opacity: 1},
+            animateIn: {top: 300, opacity: 1},
             animateOut: {top: 430, opacity: 0},            
             delay: 700
         })
@@ -115,13 +115,13 @@ $(function(){
                 ['2016.06', .8],
             ],
             css: {top: 100,opacity: 0},
-            animateIn: {top: 120,opacity: 1},
+            animateIn: {top: 100,opacity: 1},
             animateOut: {top: 100,opacity: 0},
             center: true
         })
         .addComponent('msg', {
             text: '2015-2016技术部在不断大',
-            css: {opacity: 0, top: 300},
+            css: {opacity: 0, top: 280},
             animateIn: {opacity: 1},
             animateOut: {opacity: 0},
             delay: 500
@@ -156,7 +156,7 @@ $(function(){
                 ['科学家', .01]
             ],
             css: {top: 0,opacity: 0,},
-            animateIn: {top: 160,opacity: 1},
+            animateIn: {top: 140,opacity: 1},
             animateOut: {top: 0,opacity: 0},
             center: true
         })
@@ -180,13 +180,13 @@ $(function(){
                 ['女', .16, '#c00'],
             ],
             css: {top: 100,opacity: 0},
-            animateIn: {top: 140,opacity: 1},
+            animateIn: {top: 120,opacity: 1},
             animateOut: {top: 0,opacity: 0},
             center: true
         })
         .addComponent('msg', {
             text: '妹子都去哪了？？？',
-            css: {opacity: 0, top: 310},
+            css: {opacity: 0, top: 290},
             animateIn: {opacity: 1},
             animateOut: {opacity: 0},
             delay: 500
@@ -228,12 +228,12 @@ $(function(){
             width : 300,height : 300,
             data:[['React' , .7  ,'#ff0000']],
             css : {top:100,opacity:0,fontSize: '30px'},
-            animateIn:{opacity:1,top:120},
+            animateIn:{opacity:1,top:100},
             animateOut:{opacity:0,top:100}
         })
         .addComponent('msg', {
             text: 'React+Redux+Webpack',
-            css: {opacity: 0, top: 300},
+            css: {opacity: 0, top: 280},
             animateIn: {opacity: 1},
             animateOut: {opacity: 0},
             delay: 2000
@@ -295,7 +295,7 @@ $(function(){
                 ['各种聚餐', .4, 'rgba(225, 0, 0, 0.4)', 80, '150%']
             ],
             css: {bottom: 0,opacity: 1},
-            animateIn: {bottom: 200,opacity: 1},
+            animateIn: {bottom: 180,opacity: 1},
             animateOut: {bottom: 0,opacity: 0},
             center: true
         })
@@ -309,7 +309,7 @@ $(function(){
             height: 173,
             bg: config.idx + '/imgs/p-team1.png',
             css: {top: 500, opacity: 0},
-            animateIn: {top: 120, opacity: 1},
+            animateIn: {top: 100, opacity: 1},
             animateOut: {top: 500, opacity: 0},  
             delay: 200
         })
@@ -319,7 +319,7 @@ $(function(){
             height: 173,
             bg: config.idx + '/imgs/p-team2.png',
             css: {top: 500, opacity: 0},
-            animateIn: {top: 220, opacity: 1},
+            animateIn: {top: 200, opacity: 1},
             animateOut: {top: 500, opacity: 0},  
             delay: 500
         })
@@ -329,7 +329,7 @@ $(function(){
             height: 173,
             bg: config.idx + '/imgs/p-team3.png',
             css: {top: 500, opacity: 0},
-            animateIn: {top: 320, opacity: 1},
+            animateIn: {top: 300, opacity: 1},
             animateOut: {top: 500, opacity: 0},  
             delay: 700
         })
@@ -339,7 +339,7 @@ $(function(){
             height: 173,
             bg: config.idx + '/imgs/p-team4.png',
             css: {top: 500, opacity: 0},
-            animateIn: {top: 430, opacity: 1},
+            animateIn: {top: 400, opacity: 1},
             animateOut: {top: 500, opacity: 0},  
             delay: 1000
         })
@@ -412,7 +412,7 @@ $(function(){
                 config.idx + '/imgs/people/p-57.png',
                 config.idx + '/imgs/people/p-58.png'
             ],
-            css: {top: 120, opacity: 1}
+            css: {top: 100, opacity: 1}
         })
         .addComponent('msg', {
             text: '开来成为我们中的一员吧！',
@@ -447,7 +447,7 @@ $(function(){
                     '我要做自己的大王<br/>'+
                     '超越自我，享受生活<br/>'+
                     '让生命之船扬帆起航</p>',
-            css: {opacity: 0, top: 90, color: '#fff', textAlign: 'center'},
+            css: {opacity: 0, top: 70, color: '#fff', textAlign: 'center'},
             animateIn: {opacity: 1},
             animateOut: {opacity: 0},
             delay: 500
@@ -458,7 +458,7 @@ $(function(){
             center: true,
             width: 300,
             height: 300,
-            css: {top: 50, opacity: 1}
+            css: {top: 30, opacity: 1}
         })
         .addComponent('end', {
             center: true,
@@ -470,7 +470,7 @@ $(function(){
                     '你是否愿意和我一起参与其中<br/>'+
                     '一起来创造一个<br/>'+
                     '不一样的智课</p>',
-            css: {opacity: 0, top: 200, color: '#fff', textAlign: 'center'},
+            css: {opacity: 0, top: 180, color: '#fff', textAlign: 'center'},
             animateIn: {opacity: 1},
             animateOut: {opacity: 0},
             delay: 500

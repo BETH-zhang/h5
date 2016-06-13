@@ -34,7 +34,7 @@ body{
 
 .h5_component_name_caption{
     position: absolute;
-    top: 20px;
+    /*top: 20px;*/
     background-image: url('/h5/imgs/page_caption_bg.png');
     width: 323px;
     height: 77px;
