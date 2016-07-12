@@ -1,28 +1,57 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1">
-
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <title>我来智课已经N天了</title>
-
-    <script type="text/javascript" src="build/vendor.js"></script>
-    <script type="text/javascript" src="build/index.js"></script>
-    <link rel="stylesheet" type="text/css" href="build/style.css" >
+    <link rel="stylesheet" type="text/css" href="build/style.css">
     <style type="text/css">
-    body{
+    body {
         background: #fff;
     }
     </style>
-    
-    
+
     <body>
         <div class="loading">
             <div class="double-bounce1"></div>
             <div class="double-bounce2"></div>
             <div id="rate">等待0%</div>
         </div>
-
+        <div id="wechat">
+            <p>如果页面被重新排版导致无法正常使用，或加载太慢，<strong>请点击右上角按钮，选择在浏览器中打开</strong></p>
+        </div>
     </body>
+    <script type="text/javascript">
+    fuckWeChat();
+
+    function isWechat() {
+        var ua = navigator.userAgent;
+
+        if (ua.indexOf('MicroMessenger') === -1) {
+            return false;
+        } else {
+            return true;
+        }
+    }
+
+    function isIOS() {
+        var ua = navigator.userAgent;
+
+        if (ua.indexOf('iPhone') === -1) {
+            return false;
+        } else {
+            return true;
+        }
+    }
+
+    function fuckWeChat() {
+        if (isWechat() && isIOS()) {
+            $('#wechat').style.display = 'block';
+        }
+    }
+    </script>
+    <script type="text/javascript" src="build/vendor.js"></script>
+    <script type="text/javascript" src="build/index.js"></script>
 
 </html>

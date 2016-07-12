@@ -1,21 +1,33 @@
-body{
+body {
     margin: 0;
     padding: 0;
     font-family: 'Hack', 'Noto Sans S Chinese', 'Lantinghei SC', 'Arial', sans-serif, 'Microsoft Yahei';
 }
 
-.h5_page{
+#wechat {
+    font-size: 12px;
+    padding: 10px;
+    color: #b94a48;
+    background: #f2dede;
+    line-height: 20px;
+    display: none;
+}
+
+.h5_page {
     background-image: url('/h5/imgs/page_bg.png');
 }
-.h5_page_face{
+
+.h5_page_face {
     background-image: url('/h5/imgs/face_bg.png');
 }
 
-.h5_component_name_time{
+.h5_component_name_time {
     text-align: center;
     color: #fff;
     font-size: 22px;
 }
+
+
 /*.h5_component_name_slogan{
     -webkit-animation:rock 2s infinite 2s;
 }
@@ -32,7 +44,7 @@ body{
 }
 */
 
-.h5_component_name_caption{
+.h5_component_name_caption {
     position: absolute;
     /*top: 20px;*/
     background-image: url('/h5/imgs/page_caption_bg.png');
@@ -44,22 +56,24 @@ body{
     color: #fff;
 }
 
-.h5_component_name_msg{
+.h5_component_name_msg {
     text-align: center;
     width: 100%;
     color: #fff;
     font-size: 15px;
 }
 
-.h5_component_name_back{
+.h5_component_name_back {
     top: 30px;
-    -webkit-animation:back 2s infinite 2s;
+    -webkit-animation: back 2s infinite 2s;
 }
 
-@-webkit-keyframes back{
-    50%{ top: 20px; }
+@-webkit-keyframes back {
+    50% {
+        top: 20px;
+    }
 }
 
-.h5_component_name_team{
+.h5_component_name_team {
     border: 1px solid #ff0000;
 }
