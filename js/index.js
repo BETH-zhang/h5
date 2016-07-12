@@ -25,7 +25,7 @@ var getDaysFromYear = require('./TimeFormat.js');
 /*主要逻辑*/
 $(function() {
     var config = {
-        idx: '/h5'
+        idx: ''
     }
 
     // var h5 = new H5();
