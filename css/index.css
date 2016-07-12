@@ -14,11 +14,11 @@ body {
 }
 
 .h5_page {
-    background-image: url('/h5/imgs/page_bg.png');
+    background-image: url('/imgs/page_bg.png');
 }
 
 .h5_page_face {
-    background-image: url('/h5/imgs/face_bg.png');
+    background-image: url('/imgs/face_bg.png');
 }
 
 .h5_component_name_time {
@@ -47,7 +47,7 @@ body {
 .h5_component_name_caption {
     position: absolute;
     /*top: 20px;*/
-    background-image: url('/h5/imgs/page_caption_bg.png');
+    background-image: url('/imgs/page_caption_bg.png');
     width: 323px;
     height: 77px;
     text-align: center;
